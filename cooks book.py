@@ -1,5 +1,7 @@
 import pprint
+
 pp = pprint.PrettyPrinter()
+
 
 def cook_dict():
     with open('book cooks.txt', encoding='utf-8') as file:
@@ -35,6 +37,7 @@ def get_shop_list_by_dishes(dishes, person_count):
                                                             'quantity': ingrident['quantity'] * person_count}
     pp.pprint(result)
 
+
 def changes():
     print("название блюда: "
           "Омлет,"
@@ -45,5 +48,5 @@ def changes():
     person_count = int(input("Введите количество персон: "))
     get_shop_list_by_dishes(dishes, person_count)
 
-changes()
 
+changes()
