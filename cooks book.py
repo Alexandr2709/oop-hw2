@@ -4,6 +4,7 @@ pp = pprint.PrettyPrinter()
 
 
 def cook_dict():
+    '''читаем файл и создаём меню'''
     with open('book cooks.txt', encoding='utf-8') as file:
         cook_book = {}
         for line in file:
@@ -39,6 +40,7 @@ def get_shop_list_by_dishes(dishes, person_count):
 
 
 def changes():
+    '''Пользователь выбирает блюдо и колличество персон'''
     print("название блюда: "
           "Омлет,"
           "Утка по-пекински,"
